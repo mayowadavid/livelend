@@ -1,9 +1,5 @@
 const express = require('express');
 const app = express();
-const { resolve } = require('path');
-
-// Copy the .env.example in the root into a .env file in this folder
-require('dotenv').config({ path: './.env' });
 
 app.use(express.static("public"));
 
