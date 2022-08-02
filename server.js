@@ -8,7 +8,7 @@ require('dotenv').config({ path: './.env' });
 app.use(express.static("public"));
 
 app.get('/', (req, res) => {
-  const path = resolve(process.env.STATIC_DIR + '/index.html');
+  const path = resolve('/index.html');
   res.sendFile(path);
 });
 
